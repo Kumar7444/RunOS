@@ -22,16 +22,16 @@ public class AppTest
     public void testApp() throws Exception
     {
 		// System.setProperty("webdriver.chrome.driver", "/Users/e5110782/Downloads/chromedriver");
-	RemoteWebDriver driver;
+	RemoteWebDriver ddriver;
 	DesiredCapabilities caps = new DesiredCapabilities();
 	caps.setCapability("browserName","chrome");
 	caps.setCapability("platform", "MAC"); 
-	driver = new RemoteWebDriver(new URL("http://10.233.105.45:5568/wd/hub"), caps);
+	ddriver = new RemoteWebDriver(new URL("http://10.233.105.45:5568/wd/hub"), caps);
 	
 	
 	
-		driver.get("https://www.google.com.au");
-		driver.quit();
+		ddriver.get("https://www.google.com.au");
+		ddriver.quit();
 		
       
       
